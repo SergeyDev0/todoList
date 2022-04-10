@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@18657a9/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <a href="#" class="logo">
+                <div class="logo-item"></div>
+            </a>
+        </header>
+        <section class="todo-list__wrapper">
+            <div class="create-item__wrapper">
+                <h2 class="create-item__title">Создать элемент</h2>
+                <button class="create-item"><i class="fa-solid fa-circle-plus"></i></button>
+            </div>
+            <ul class="todo-list">
+                <li class="todo-list__item">
+                    <div class="item__wrapper-text">
+                        <input name="f" class="item-text" value="Lorem ipsum dolor sit amet consectetur." disabled>
+                    </div>
+                    <div class="item-nav">
+                        <button for="f" class="item-nav__change"><i class="fa-thin fa-pen item-nav__change-icon"></i></button>
+                        <button class="item-nav__delete"><i class="fa-thin fa-circle-trash item-nav__delete-icon"></i></button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

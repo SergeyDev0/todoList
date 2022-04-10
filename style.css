@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    pointer-events: none;
+    user-select: none;
+}
+body{
+    background-color: #4858B7;
+    font-family: 'Open Sans', sans-serif;
+}
+button, input{
+    border: none;
+    color: black;
+    outline: none;
+    background-color: inherit;
+}
+button{
+    cursor: pointer;
+}
+header{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    margin-top: 10px;
+}
+.logo-item{
+    background-image: url(./img/logo.png);
+    width: 140px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.todo-list__wrapper{
+    width: 968px;
+    height: calc(95vh - 70px - 10px);
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.todo-list__item{
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item__wrapper-text{
+    width: 88%;
+    padding: 10px 30px;
+    margin-right: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #e4e4e4;
+    background-color: #f3f3f3;
+}
+.item-text{
+    width: 100%;
+    font-size: 16px;
+}
+.item-nav__change-icon, .item-nav__delete-icon{
+    margin: 8px 0;
+    font-size: 26px;
+}
+.item-nav__change-icon{
+    margin-right: 15px;
+}
+.create-item__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 2%;
+}
+.item-nav{
+    border: 1px solid #e4e4e4;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: none;
+    background-color: beige;
+}
+.create-item{
+    font-size: 24px;
+    color: #3a3a3a;
+}
+.create-item__title{
+    font-size: 16px;
+    margin-right: 10px;
+    color: #3a3a3a;
+    margin-bottom: 4px;
+}
